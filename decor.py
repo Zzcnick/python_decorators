@@ -10,10 +10,15 @@ def timer(func):
 
 def inputs(func):
     def print_inputs(*arg):
-        return 0 # PLACEHOLDER
+        argstr = str(arg)
+        if len(arg) == 1:
+            argstr = argstr[:-2] + argstr[-1:] # Removes Comma
+        return "Input: " + str(func.func_name) + argstr
+
     return print_inputs
 
-@timer
+#@timer
+#@inputs
 def smart_fib(n):
     a = 0
     b = 1
@@ -24,11 +29,12 @@ def smart_fib(n):
         n -= 1
     return a
 
-@timer
+#@timer
+#@inputs
 def naive_fib(n):
     if n < 2:
         return n
     return naive_fib(n-1) + naive_fib(n-2)
 
-print smart_fib(20)
-print naive_fib(20)
+print smart_fib(5)
+print naive_fib(5)
