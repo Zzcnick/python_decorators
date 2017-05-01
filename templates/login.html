@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+
+    <title>TriangleTime-Login</title>
+
+
+    <!-- use utf-8 chars -->
+    <meta charset="utf-8">
+    <!-- look pretty on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- main bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 2 bootstrap things we're using -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <!-- a place for all of your regular css stuff -->
+
+    <style>
+
+    body {
+        passing: 20px;
+        color: black;
+        background-color: lightsteelblue;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        text-align: center;
+    }
+
+    #head{
+    	color: white;
+    	text-align: auto;
+    	font-size: 5em;
+    }
+
+    .jumbotron{
+        text-align: center;
+    	margin-top: 100px;
+        background-color: white;
+    }
+
+    h1 {
+        color: red;
+        text-align: center;
+        font-size: 300%;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        line-height: 2;
+    }
+
+    #login{
+        padding:2em;
+        float:center;
+        top: 500px;
+        padding-top: 4em;
+        padding-bottom:4em;
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    #input {
+    	border: 2px solid #ccc;
+    	padding: 300px;
+    }
+    input[type=submit]{
+        background-color: darkgray;
+        color:white;
+    }
+    input[type=text]{
+        margin:4px;
+    }
+    .alert:empty{
+        display:none;
+    }
+    #description{
+        padding:2em;
+        font-family: "PT Sans";
+        padding-top: 4em;
+        float:left;
+        overflow:auto;
+    }
+    footer{
+        position:relative;
+        right:0;
+        left:0;
+        bottom: 0;
+        padding:1em;
+        clear:both;
+        background-color:darkgray;
+        margin-top: 2em;
+        text-align: center;
+    }
+    </style>
+
+    
+<div class="container">
+  <div class="jumbotron">
+    <h1>Triangle Time</h1> 
+    <p><i>So Easy Even a Child Can Do It</i></p> 
+  </div>
+</div>
+
+
+<body>
+<div class="container">
+<div class="alert alert-danger">{{status}}</div><br>
+</div>
+
+<div class="container">
+    <div id="description">
+    <h2>Design and publish your next website with ease</h2><br>
+    <h3>Login to get started<h3><br>
+
+    </div>
+
+  <form id="login" action = "/login/" method = "POST">
+    <h2>Login</h2><br>
+    <b>Username:</b> <input class="input" type = "text" name = "user" placeholder = "user"><br>
+    <b>Password:</b> <input class="input" type = "password" name = "pass" placeholder = "pass"><br><br>
+    <input type = "submit" value = "Login" name = "enter">
+    <input type = "submit" value = "Register" name = "enter">
+  </form><br>
+  <div class="clear"></div>
+</div>
+
+
+<footer>
+    <p><i>Brought to you by Brian Lu, Max Bertfield, Michael Woo, Sarah Yoon</i></p>
+</footer>
+
+</body>
+
+
+</html>
+
+
+
+
+

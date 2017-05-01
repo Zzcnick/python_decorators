@@ -1,0 +1,150 @@
+--Devlog--
+Michael -- 2017-01-07 11:00 PM
+finished auth
+
+Brian -- 2017-01-08 16:11
+-Added variable links for site hosting/saving
+-Added example file under theOne/test path
+-Added variable link for site design/editing and template selection
+
+Sarah -- 2017-01-09 22:45
+-Added testTemplateStuff folder, which includes bootstrap directories and
+ the homepage of a schvalid template for user to modify
+
+Max -- 2017-01-08 11:46 PM
+- added the ability to edit tags called description in edit.jsx
+
+Michael -- 2017-01-09 9:50PM
+change database: site, site_edit for each user
+started save.py
+
+Brian -- 2017-01-10 4:24
+- Started jQuery/AJAX implementation in edit.js to extract HTML and transport to Python file.
+- Added /save route in app.py file
+- Added test route to test this function
+
+Michael -- 2017-01-10 11:04PM
+-worked on front end
+
+Sarah -- 2017-01-11 1:00AM
+- Added buttons to template1:
+    - Upload/Remove Logo
+    - Add/Remove/Edit/Done Editing Comapny Description
+    - Upload/Remove Image
+    - Add a Tile
+    - Save, Publish
+- Add placeholder divs for "Work", "About", and "Contact", need content for each + buttons
+
+Max -- 2017-01-11 4:30 AM
+-Made the buttons for adding, removing and editing a description work
+-started working on JS for adding photo blocks
+
+Brian -- 2017-01-11 23:15
+- Finished jQuery/AJAX implementation for saving a user's templates
+- Started work on writing to a file using AJAX data
+
+Brian -- 2017-01-14-21:24
+- Fixed routing for saving and editting files
+
+Michael -- 2017-01-16
+-update database when making a new site
+-can view and edit your own pages now
+
+Max -- 2017-01-17 12:30 AM
+-added form inputs for uplaoding a file
+-descriptions of photos can now be changed
+-this is really hard
+
+Michael -- 2017-01-17
+-worked on functions for saving their sites
+
+Sarah -- 2017-01-17 1:00AM 
+- added stuff to About page
+
+Sarah -- 2017-01-18 2:00AM 
+- About page finished
+- Changed buttons for image blocks at the top
+
+Brian -- 2017-01-18
+- Started work on pre tags
+
+Max -- 2017-01-18
+- change editing descriptions for photo blocks to popup
+
+Sarah -- 2017-01-19 2:00AM
+- add content to Contact page
+- Add dropdown button for adding stuff to a new subpage, but doesn't work
+- Dropdown should have options for adding
+   - Paragraph (serif font, large, like top description)
+   - Paragraph (sans-serif font, small, ike contact info)
+   - Contributor Bio (like sections in About page)
+   - Square Image with text on the right
+   - Square Image with text on the left
+   - Image Carousel  
+   
+Michael -- 2017-01-19
+-fixed editmypages
+
+Brian -- 2017-01-19 22:45
+-fixed dropdown menu
+-working on previewing sites
+
+Max -- 2017-01-19
+- fix adding photo blocks
+
+Michael -- 2017-01-20
+-wrote functions to get people's pages without getting links
+
+Sarah -- 2017-01-21 1:00AM
+- Added inline form for uploading a logo
+- Add content to "New Subpage"
+   - Square Image with text on the right/left
+   - Image Carousel
+- These should be removed, they're there so "Add Element" button can insert that HTML
+- put everything that should disappear when publishing in a div called "strip"
+
+Brian -- 2017-01-21
+- Finished previewing sites
+- Fixed JS for image carousel
+
+Max -- 2017-01-21
+- elements to be added (photo blocks, about page bios, etc) moved to invisible div at bottom
+
+Michael -- 2017-01-22
+-template selector
+-frontend for homepage
+
+Michael -- 2017-01-24
+-collapsable navbar
+-handle error cases for entering sitename
+-worked on frontend for login and homepage
+
+Sarah -- 2017-01-24
+- color picker added
+- fix photo width for uploads in photo blocks, about page
+
+Max -- 2017-01-24
+- strip() works 
+
+Brian -- 2017-01-24
+- save and publish work
+- finish JS for removing sites
+
+Max -- 2017-01-25
+- uploading images works
+- choosing background color works
+- change buttons for about page sections
+- rest of buttons working
+- edit green screen stuff in video
+
+Brian -- 2017-01-25
+- finish backend for removing sites
+
+Michael -- 2017-01-25
+- handle spaces in video
+- fix removing sites
+- login front end
+- video done
+
+Brian -- 2017-01-25
+- design changes and readme

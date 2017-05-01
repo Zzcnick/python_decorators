@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+
+    <title>TriangleTime</title>
+
+
+    <!-- use utf-8 chars -->
+    <meta charset="utf-8">
+    <!-- look pretty on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- main bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 2 bootstrap things we're using -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <!-- a place for all of your regular css stuff -->
+
+    <style>
+
+    body {
+
+        passing: 20px;
+        color: black;
+        background-color: lightsteelblue;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        text-align: center;
+
+    }
+
+    div.transbox {
+        margin: 15px;
+        background-color: #FFFCFF;
+        border: 1px solid black;
+        opacity: 0.6;
+        filter: alpha(opacity=60); /* For IE8 and earlier */
+    }
+
+    div.transbox p {
+        margin: 2%;
+        font-weight: bold;
+        color: black;
+    }
+
+    .heading {
+        color: #FFFCFF;
+        text-align: center;
+        font-size: 300%;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        line-height: 2;
+    }
+
+    #navbar-nav {
+        color: white;
+        background-color: #515251;
+
+    }
+
+    #login {
+        top: 500px;
+        padding-top: 4em;
+        text-align: center;
+    }
+
+    .nav{
+        color: white;
+    }
+
+    #homemsg{
+        margin: 20px;
+        color: black;
+        text-align:center;
+        font-size: 300%;
+    }
+
+    .content{
+        margin-top: 100px;
+    }
+
+    .jumbotron{
+        background-color: #FFF3DB;
+    }
+
+    nav li a:hover{
+        background-color: #111;
+    }
+    nav li a{
+        display: block; 
+        margin: 0 auto; 
+        width: 150px; 
+        line-height: 44px;  
+        text-decoration: none; 
+        color: white;
+        white-space:nowrap; 
+    }
+
+    .icon-bar{
+        background-color:white;
+    }
+    .boxlinks{
+        padding:14px;
+    }
+    #homeform{
+        float: left;
+        text-align: left;
+    }
+    input[type=submit]{
+        background-color: darkgray;
+        color:black;
+    }
+    input[type=text],input[type=password]{
+        margin:4px;
+    }
+    .alert:empty{
+        display:none;
+    }
+    h3{
+        font-weight: normal;
+        font-size:200%;
+    }
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav id="navbar-nav" class="navbar navbar-light navbar-fixed-top">
+        <div class="container-fluid">
+                <div class="nav navbar-nav navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <li><a class="navbar-brand" href="/home/">Triangle Time</a></li>
+                </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/removemypages/">Remove my Pages</a></li>
+                    <li><a href="/viewmypages/">View my Pages</a></li>
+                    <li><a href="/editmypages/">Edit my Pages</a></li>
+                    <li><a href="/viewotherpages/">View Popular Pages</a></li>
+                    <li><a href="/accountsettings/"><span class="glyphicon glyphicon-user"></span> Account Settings</a></li>
+                    <li><a href="/logout/"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="content">
+    {% block content %}
+
+    {% endblock %}
+</div>
+
+</body>
+
+
+</html>
