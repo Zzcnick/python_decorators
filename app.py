@@ -9,6 +9,24 @@ UPLOAD_FOLDER = 'static/images'
 
 db = "data/database.db"
 
+import time
+
+def timer(func):
+    start = time.time()
+    def print_time(n):
+        func(n)
+        end = time.time()
+        return "Execution Time: %.5f"%(end - start)
+    return print_time
+
+def inputs(func):
+    def print_inputs(*arg):
+        argstr = str(arg)
+        if len(arg) == 1:
+            argstr = argstr[:-2] + argstr[-1:] # Removes Comma
+        return "Input: " + str(func.func_name) + argstr
+
+    return print_inputs
 
 app = Flask(__name__)
 app.secret_key = '<j\x9ch\x80+\x0b\xd2\xb6\n\xf7\x9dj\xb8\x0fmrO\xce\xcd\x19\xd49\xe5S\x1f^\x8d\xb8"\x89Z'
@@ -16,7 +34,7 @@ app.secret_key = '<j\x9ch\x80+\x0b\xd2\xb6\n\xf7\x9dj\xb8\x0fmrO\xce\xcd\x19\xd4
 test_html_string = ""
 @app.route("/")
 @app.route("/home/", methods = ["GET","POST"])
-@wrapper
+@inputs
 @timer
 def home():
     if 'user' not in session:
